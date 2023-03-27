@@ -2,7 +2,8 @@
 Soubor poznámek k maturitním otázkám a vypracované odpovědi. :)
 
 ## Style guide
-???? - prosím doplnit informace
+???? - prosím doplnit informace\
+pro napsání nového řádku používejte \ namísto 2 mezer (lepe se to zobrazuje)
 
 ## TODO
 vše
