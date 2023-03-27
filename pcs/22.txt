@@ -1,0 +1,8 @@
+===22===
+Nastavit výchozí bránu na počítači.
+V mikrotiku nastavit výchozí bránu v routes.
+A ve firewallu dát nat a masquarade. (Je vhodné dát pro out interface ether1?)
+Nastavení aby se internet připojil na PC6 port 2000 je :
+V natu udělat nové pravidlo dstnat s protokolem tcp na destination port 2000.
+A akce bude netmap na adresu té PC6ky na port 80 (tam asi běží ta jeho stránka).
+-Kurva tady už jsem to asi nestihl co? fuj!

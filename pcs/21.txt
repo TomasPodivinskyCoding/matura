@@ -1,0 +1,17 @@
+===21===
+Nezapomenout bash souboru dát práva na spouštění.
+#! /bin/bash
+read cislo1
+read cislo2
+vysledek=$((cislo1+cislo2))
+echo $vysledek
+
+for ((i=0;i<10;i++)) {}
+
+if [ $b -lt $a ]
+then
+echo "blablabalb"
+fi
+
+Z windowsu kopírovat na linux je shift a right button.
+Otevřit v F3 soubor a pak myší oznčit a shirt right button je to zkopírovaný.

@@ -1,0 +1,11 @@
+===14===
+Vědět co je to APIPA????
+Postup DHCP????
+Postup překladů názvů????
+
+Alternativní konfigurace na APIPU se objeví kdyý dáme získat ip adresu DHCP serverem.
+Na správě serveru zandat DHCP na ipv4 pravou myší a nový obor.
+Proklikat je to tam lehký ale beztak se tě zeptá ně najekou sračku????
+V oboru je fond adres, pravou myší a tam je rozsah vyloučení.
+ipconfig /all si můžeš vyhledat MAC adresou kterou pak můžeš dát od rezervace.
+Vynucení adresy přes cmd je "ipconfig /release" a potom "ipconfig /renew".

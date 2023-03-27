@@ -1,0 +1,22 @@
+===20===
+-Popsat NFS
+-Umět popsat etc/exports
+-Umět popsat etc/fstab
+-Umět popsat etc/samba/smb.conf
+
+Vytvoř adresář pokus1 a nezapoměn Ctrl+X a C, nastavit práva na zápis.
+V etc/exports/ napsat pokus1 kterej bude mít asi všechno stejný to co nad tím ale rw, místo ro.
+Pak je asi důležitej rcnfsserver restart.
+Abys ukázal který složky se exportují ze suse2, použij showmount -e 192.168.10.22.
+V suse1 použij příkaz service nfs start.
+Potom můžeš mount 192.168.10.22:/pokus1 /pripoj. (pripoj musí být vytvořen)
+Aby byl automaticky připojen mount, musíme jít do etc/fstab/ a tam napsat 192.168.10.22:/pokus1 /pripoj nfs. (Možná funguje)
+
+Quota, otevřem etc/fstab/ a tam musí mít svazek slova usrquota a grpquota.
+quotacheck -auv, quotaon -auv a quotaoff -auv Pro zapínání a vypínání qót asi.
+repquota -a vypíše informace o nastavených kvótach.
+edquota (asi upravuje kvóty uživatele v vi editoru).
+setquota test 20 30 0 0 -a, nastaví kvótu 20mb na varování a 30mb hard limit, 0 0 je omezení souborové.
+
+Potom co založím pokus2, půjdu do smb.conf a tam nezapomenu na path, potom napíšu read only a guest ok.
+smbpasswd -a test1
